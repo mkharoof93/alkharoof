@@ -405,3 +405,13 @@ main{position:relative}
   .mobileBrandBar .brandNames .brandEnglish{font-size:13.5px}
   .mobileBrandLockup:after{font-size:9.5px;letter-spacing:.1em}
 }
+
+/* Show whole product photos (no cropping) on hero, product cards, picks rail and product sheet */
+.heroImageFrame,.heroTheme-sunny .heroImageFrame{background:#fff}
+.heroImageFrame img,.heroTheme-sunny .heroImageFrame img{object-fit:contain;padding:10px;background:transparent}
+.heroImageFrame:after{display:none}
+.productImage{background:#fff}
+.productImage>img,.productImage img{object-fit:contain;padding:8px}
+.featuredMiniImage{background:#fff}
+.featuredMiniImage img{object-fit:contain;padding:8px}
+.sheetProduct img{object-fit:contain;background:#fff;border:1px solid var(--line);padding:4px}
